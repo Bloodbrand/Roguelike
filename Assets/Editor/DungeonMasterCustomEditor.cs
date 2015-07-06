@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 
 [CustomEditor(typeof(DungeonMaster))]
 public class DungeonMasterCustomEditor : Editor
@@ -10,76 +12,74 @@ public class DungeonMasterCustomEditor : Editor
     SerializedProperty ThisList;
     int ListSize;
 
+    string[] specialOptions = new string[] { "None", "Repeat", "Link" };
+
     void OnEnable()
     {
         dm = (DungeonMaster)target;
         GetTarget = new SerializedObject(dm);
-        ThisList = GetTarget.FindProperty("RoomList");
+        ThisList = GetTarget.FindProperty("PossibleRooms");
     }
 
     public override void OnInspectorGUI()
     {
-        //Update our list
+        DrawDefaultInspector();
+        //Update list
         GetTarget.Update();
         EditorGUILayout.Space();
 
         if (GUILayout.Button("Add New"))
         {
-            dm.RoomList.Add(new Room());
+            dm.AddNew();
         }
 
         EditorGUILayout.Space();
 
-        //Display our list to the inspector window
+        //Display list to inspector 
 
         for (int i = 0; i < ThisList.arraySize; i++)
         {
             SerializedProperty MyListRef = ThisList.GetArrayElementAtIndex(i);
-            SerializedProperty Mesh = MyListRef.FindPropertyRelative("Mesh");
-            SerializedProperty Probability = MyListRef.FindPropertyRelative("probability");
-            SerializedProperty Repeat = MyListRef.FindPropertyRelative("repeat");
-            SerializedProperty Times = MyListRef.FindPropertyRelative("howManyTimes");
-            SerializedProperty Link = MyListRef.FindPropertyRelative("link");
+            SerializedProperty Name = MyListRef.FindPropertyRelative("Name");
+            SerializedProperty Prefab = MyListRef.FindPropertyRelative("Prefab");
+            SerializedProperty Probability = MyListRef.FindPropertyRelative("Probability");
+            SerializedProperty StartFrom = MyListRef.FindPropertyRelative("StartFrom");
+            SerializedProperty SelectedModifier = MyListRef.FindPropertyRelative("SelectedModifier");
+            SerializedProperty HowManyRepeats = MyListRef.FindPropertyRelative("HowManyRepeats");
+            SerializedProperty NextRoom = MyListRef.FindPropertyRelative("NextRoom");
+            SerializedProperty MaxSpawns = MyListRef.FindPropertyRelative("MaxSpawns");
+            SerializedProperty HowManySpawns = MyListRef.FindPropertyRelative("HowManySpawns");
 
-            EditorGUILayout.PropertyField(Mesh);
+            EditorGUILayout.PropertyField(Name);
+            EditorGUILayout.PropertyField(Prefab);
             EditorGUILayout.PropertyField(Probability);
+            EditorGUILayout.PropertyField(StartFrom);
+            EditorGUILayout.PropertyField(SelectedModifier);
+            EditorGUILayout.LabelField("Chance", calculatePercentage(dm.PossibleRooms[i].Probability).ToString() + "%");
 
-            dm.RoomList[i].repeat = EditorGUILayout.Toggle("Repeat", dm.RoomList[i].repeat);
-            if (dm.RoomList[i].repeat) EditorGUILayout.PropertyField(Times);
+            dm.PossibleRooms[i].MaxSpawns = EditorGUILayout.Toggle("Max spawns", dm.PossibleRooms[i].MaxSpawns);
+            if (dm.PossibleRooms[i].MaxSpawns) EditorGUILayout.PropertyField(HowManySpawns);
+            dm.PossibleRooms[i].SpecialOptionsIndex = EditorGUILayout.Popup("Special", dm.PossibleRooms[i].SpecialOptionsIndex, specialOptions);
 
-            dm.RoomList[i].link = EditorGUILayout.Toggle("Link", dm.RoomList[i].link);
-            if (dm.RoomList[i].link) EditorGUILayout.PropertyField(Times);
+            if (dm.PossibleRooms[i].SpecialOptionsIndex == 1) EditorGUILayout.PropertyField(HowManyRepeats);
+            if (dm.PossibleRooms[i].SpecialOptionsIndex == 2) EditorGUILayout.PropertyField(NextRoom);
+            if (GUILayout.Button("remove " + dm.PossibleRooms[i].Name)) ThisList.DeleteArrayElementAtIndex(i);
 
-            EditorGUILayout.Space();
-
-            //EditorGUILayout.LabelField("Add modifiers");
-
-            //if (GUILayout.Button("Add New Index", GUILayout.MaxWidth(130), GUILayout.MaxHeight(20)))
-            //{
-            //    MyArray.InsertArrayElementAtIndex(MyArray.arraySize);
-            //    MyArray.GetArrayElementAtIndex(MyArray.arraySize - 1).intValue = 0;
-            //}
-
-            //for (int a = 0; a < MyArray.arraySize; a++)
-            //{
-            //    EditorGUILayout.PropertyField(MyArray.GetArrayElementAtIndex(a));
-            //    if (GUILayout.Button("Remove  (" + a.ToString() + ")", GUILayout.MaxWidth(100), GUILayout.MaxHeight(15)))
-            //    {
-            //        MyArray.DeleteArrayElementAtIndex(a);
-            //    }
-            //}
-
-            EditorGUILayout.Space();
-
-            //Remove this index from the List
-            if (GUILayout.Button("Remove This Room (" + i.ToString() + ")"))
-            {
-                ThisList.DeleteArrayElementAtIndex(i);
-            }
+            //max repeats greater than max spawns
+            if (dm.PossibleRooms[i].HowManyRepeats > dm.PossibleRooms[i].HowManySpawns)
+                dm.PossibleRooms[i].HowManyRepeats = dm.PossibleRooms[i].HowManySpawns;
+            
         }
-
-        //Apply the changes to our list
         GetTarget.ApplyModifiedProperties();
+    }
+
+    double calculatePercentage(float probability)
+    {
+        double total = dm.totalProbabilityValue();
+        double percent = Math.Round((probability / total) * 100, 1);
+
+        if(percent < 0 || float.IsNaN((float)percent)) return 0;
+        else return percent;
     }
 }
 
