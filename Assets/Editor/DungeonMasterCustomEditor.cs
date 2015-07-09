@@ -66,8 +66,8 @@ public class DungeonMasterCustomEditor : Editor
             if (GUILayout.Button("remove " + dm.PossibleRooms[i].Name)) ThisList.DeleteArrayElementAtIndex(i);
 
             //max repeats greater than max spawns
-            if (dm.PossibleRooms[i].HowManyRepeats > dm.PossibleRooms[i].HowManySpawns)
-                dm.PossibleRooms[i].HowManyRepeats = dm.PossibleRooms[i].HowManySpawns;
+            if (dm.PossibleRooms[i].HowManyRepeats > dm.PossibleRooms[i].HowMany)
+                dm.PossibleRooms[i].HowManyRepeats = dm.PossibleRooms[i].HowMany;
             
         }
         GetTarget.ApplyModifiedProperties();

@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442576}
-  - 114: {fileID: 11416736}
+  - 114: {fileID: 11404678}
   m_Layer: 0
   m_Name: DungeonMaster
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11416736
+--- !u!114 &11404678
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -39,49 +39,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1eb58e5bee98554ab00b0d3a25d6f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRooms: 8
+  TotalRooms: 0
   PossibleRooms:
-  - Name: Cemetery
-    Prefab: {fileID: 0}
-    Probability: 2000
-    StartFrom: 2
-    SelectedModifier: -2000
+  - Name: Room 1
+    Prefab: {fileID: 166938, guid: f5cdd027b9ad00d44832724d1ebd99b3, type: 2}
+    Probability: 50
+    StartFrom: 0
+    SelectedModifier: -25
     HowManyRepeats: 0
     MaxSpawns: 0
-    HowManySpawns: 0
+    HowMany: 0
     Link: 0
     NextRoom: {fileID: 0}
     SpecialOptionsIndex: 0
-  - Name: Treasure
-    Prefab: {fileID: 0}
-    Probability: 10
-    StartFrom: 0
-    SelectedModifier: -10
-    HowManyRepeats: 0
-    MaxSpawns: 0
-    HowManySpawns: 0
-    Link: 0
-    NextRoom: {fileID: 0}
-    SpecialOptionsIndex: 0
-  - Name: Rest
-    Prefab: {fileID: 0}
-    Probability: 10
-    StartFrom: 0
+  - Name: Room 2
+    Prefab: {fileID: 184184, guid: 7b857b4a4b5a0da42840aa03ecdab8dd, type: 2}
+    Probability: 50
+    StartFrom: 50
     SelectedModifier: 0
     HowManyRepeats: 0
     MaxSpawns: 0
-    HowManySpawns: 0
-    Link: 0
-    NextRoom: {fileID: 0}
-    SpecialOptionsIndex: 0
-  - Name: Library
-    Prefab: {fileID: 0}
-    Probability: 10
-    StartFrom: 0
-    SelectedModifier: 0
-    HowManyRepeats: 0
-    MaxSpawns: 0
-    HowManySpawns: 0
+    HowMany: 0
     Link: 0
     NextRoom: {fileID: 0}
     SpecialOptionsIndex: 0

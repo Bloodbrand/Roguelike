@@ -5,36 +5,38 @@ using System.Collections.Generic;
 
 public class DungeonMaster : MonoBehaviour
 {
-    public int maxRooms;
+    public int TotalRooms;
     [HideInInspector] public List<Room> PossibleRooms = new List<Room>();
 
     void Start()
     {
-        GenerateDungeon(maxRooms);
+        GenerateDungeon(TotalRooms);
     }
 
-    Dungeon GenerateDungeon(int maxRooms)
+    Dungeon GenerateDungeon(int totalRooms)
     {
         Dungeon dungeon = new Dungeon();
 
-        for (int room = 0; room < maxRooms; room++)
+        for (int roomNum = 0; roomNum < totalRooms; roomNum++)
         {
-            dungeon.AddRoom(pickRandomRoom(room));
+            dungeon.AddRoom(pickRandomRoom(roomNum));
+            Debug.Log(dungeon.Rooms[roomNum].Name);
         }
+            
+
+        instantiateRoom(dungeon.Rooms[0]);
 
         return dungeon;
     }
 
-    Room pickRandomRoom(int roomNumber)
+    Room pickRandomRoom(int roomNum)
     {
         int randomNum = UnityEngine.Random.Range(0, (int)totalProbabilityValue());
         float currentProbability = 0; 
 
         for (int i = 0; i < PossibleRooms.Count; i++)
         {
-            Debug.Log(i);
-            if (checkRoomSkip(roomNumber, PossibleRooms[i])) continue;
-
+            if (checkRoomSkip(i, PossibleRooms[i])) continue;
             currentProbability += PossibleRooms[i].Probability;
             if (randomNum <= currentProbability) return PossibleRooms[i].PickRoom();
         }
@@ -43,7 +45,7 @@ public class DungeonMaster : MonoBehaviour
 
     public double totalProbabilityValue()
     {
-        double total = 1;
+        double total = 0;
         for (int i = 0; i < PossibleRooms.Count; i++)
         {
             double prob = PossibleRooms[i].Probability;
@@ -64,5 +66,12 @@ public class DungeonMaster : MonoBehaviour
     public void AddNew()
     {
         PossibleRooms.Add(new Room());
+    }
+
+    ///////////////////////////////////////////////////////////////////////
+
+    void instantiateRoom(Room room)
+    {
+        Instantiate(room.Prefab, Vector3.zero, Quaternion.identity);
     }
 }

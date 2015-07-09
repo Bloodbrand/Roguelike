@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 public class Dungeon 
 {
-    public List<Room> rooms = new List<Room>();
+    public List<Room> Rooms = new List<Room>();
 
     public void AddRoom(Room room)
     {
-        this.rooms.Add(room);
+        this.Rooms.Add(room);
     }
 }

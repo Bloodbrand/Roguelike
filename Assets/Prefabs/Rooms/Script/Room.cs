@@ -11,14 +11,13 @@ public class Room
     public float SelectedModifier;
     public int HowManyRepeats;
     public bool MaxSpawns;
-    public int HowManySpawns;
+    public int HowMany;
     public bool Link;
     public GameObject NextRoom;
     public int SpecialOptionsIndex = 0;
 
     public Room PickRoom()
     {
-        Debug.Log(this.Name);
         this.Probability += this.SelectedModifier;
         return this;
     }
