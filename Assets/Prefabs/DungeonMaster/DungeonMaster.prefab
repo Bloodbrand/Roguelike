@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,27 +39,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1eb58e5bee98554ab00b0d3a25d6f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TotalRooms: 0
+  TotalRooms: 100
   PossibleRooms:
-  - Name: Room 1
-    Prefab: {fileID: 166938, guid: f5cdd027b9ad00d44832724d1ebd99b3, type: 2}
-    Probability: 50
+  - Name: 1
+    Prefab: {fileID: 122904, guid: f5cdd027b9ad00d44832724d1ebd99b3, type: 2}
+    Probability: 10
     StartFrom: 0
-    SelectedModifier: -25
-    HowManyRepeats: 0
+    SelectedModifier: 0
+    MaxRepeats: 0
+    Repeats: 0
     MaxSpawns: 0
-    HowMany: 0
+    Spawns: 0
     Link: 0
     NextRoom: {fileID: 0}
     SpecialOptionsIndex: 0
-  - Name: Room 2
-    Prefab: {fileID: 184184, guid: 7b857b4a4b5a0da42840aa03ecdab8dd, type: 2}
-    Probability: 50
-    StartFrom: 50
+  - Name: 2
+    Prefab: {fileID: 137854, guid: 7b857b4a4b5a0da42840aa03ecdab8dd, type: 2}
+    Probability: 10
+    StartFrom: 0
     SelectedModifier: 0
-    HowManyRepeats: 0
+    MaxRepeats: 0
+    Repeats: 0
     MaxSpawns: 0
-    HowMany: 0
+    Spawns: 0
+    Link: 0
+    NextRoom: {fileID: 0}
+    SpecialOptionsIndex: 0
+  - Name: 3
+    Prefab: {fileID: 159694, guid: 4298a1b02d02f04449e41c3bdf8b52d3, type: 2}
+    Probability: 10
+    StartFrom: 0
+    SelectedModifier: 0
+    MaxRepeats: 0
+    Repeats: 0
+    MaxSpawns: 0
+    Spawns: 0
     Link: 0
     NextRoom: {fileID: 0}
     SpecialOptionsIndex: 0

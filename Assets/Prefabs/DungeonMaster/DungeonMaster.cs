@@ -7,6 +7,7 @@ public class DungeonMaster : MonoBehaviour
 {
     public int TotalRooms;
     [HideInInspector] public List<Room> PossibleRooms = new List<Room>();
+    Dungeon dungeon;
 
     void Start()
     {
@@ -15,23 +16,23 @@ public class DungeonMaster : MonoBehaviour
 
     Dungeon GenerateDungeon(int totalRooms)
     {
-        Dungeon dungeon = new Dungeon();
+        dungeon = new Dungeon();
 
         for (int roomNum = 0; roomNum < totalRooms; roomNum++)
         {
             dungeon.AddRoom(pickRandomRoom(roomNum));
-            Debug.Log(dungeon.Rooms[roomNum].Name);
+            //Debug.Log(dungeon.Rooms[roomNum].Name);
         }
-            
 
-        instantiateRoom(dungeon.Rooms[0]);
+        dungeon.currentRoom = dungeon.Rooms[0];
+        goToRoom(dungeon.currentRoom);
 
         return dungeon;
     }
 
     Room pickRandomRoom(int roomNum)
     {
-        int randomNum = UnityEngine.Random.Range(0, (int)totalProbabilityValue());
+        int randomNum = UnityEngine.Random.Range(0, (int)CalculateTotalProbabilityValue());
         float currentProbability = 0; 
 
         for (int i = 0; i < PossibleRooms.Count; i++)
@@ -43,7 +44,8 @@ public class DungeonMaster : MonoBehaviour
         return null;                
     }
 
-    public double totalProbabilityValue()
+    //TODO: make this work for all lists
+    public double CalculateTotalProbabilityValue()
     {
         double total = 0;
         for (int i = 0; i < PossibleRooms.Count; i++)
@@ -57,21 +59,39 @@ public class DungeonMaster : MonoBehaviour
 
     bool checkRoomSkip(int roomNumber, Room room)
     {
-        //Debug.Log(room.Name);
         if (room.Probability == 0) return true;
         //if (roomNumber < room.StartFrom) return true;
         return false; 
     }
 
-    public void AddNew()
+    public void AddNewRoom()
     {
         PossibleRooms.Add(new Room());
     }
 
-    ///////////////////////////////////////////////////////////////////////
+
+    void goToRoom(Room room)
+    {
+        destroyRoom(dungeon.currentRoom);
+        instantiateRoom(room);
+        room.triggerSpawners();
+        dungeon.currentRoom = room;
+    }
+
+    public void NextRoom()
+    {
+        goToRoom(dungeon.NextRoom());
+    }
+
+    /*****************Scene Methods*****************/
 
     void instantiateRoom(Room room)
     {
-        Instantiate(room.Prefab, Vector3.zero, Quaternion.identity);
+        room.GameObject = Instantiate(room.Prefab, Vector3.zero, Quaternion.identity) as GameObject;               
+    }
+
+    void destroyRoom(Room room)
+    {
+        Destroy( room.GameObject );
     }
 }

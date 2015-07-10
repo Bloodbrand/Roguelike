@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 0dd013b117c86f5418fb0ab36edaba76
+timeCreated: 1436531243
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Box005_Part_1
+    100002: Box005_Part_2
+    100004: Box005_Part_3
+    100006: Box006_Part_1
+    100008: Box006_Part_2
+    100010: Box006_Part_3
+    100012: Box007
+    100014: Box008
+    100016: Box009_Part_1
+    100018: Box009_Part_2
+    100020: Box009_Part_3
+    100022: Object003_Part_1
+    100024: Object003_Part_2
+    100026: Object003_Part_3
+    100028: Object005_Part_1
+    100030: Object005_Part_2
+    100032: Object005_Part_3
+    100034: Object007_Part_1
+    100036: Object007_Part_2
+    100038: Object007_Part_3
+    100040: Object009_Part_1
+    100042: Object009_Part_2
+    100044: Object009_Part_3
+    100046: Object009_Part_4
+    100048: Object009_Part_5
+    100050: Object009_Part_6
+    100052: //RootNode
+    400000: Box005_Part_1
+    400002: Box005_Part_2
+    400004: Box005_Part_3
+    400006: Box006_Part_1
+    400008: Box006_Part_2
+    400010: Box006_Part_3
+    400012: Box007
+    400014: Box008
+    400016: Box009_Part_1
+    400018: Box009_Part_2
+    400020: Box009_Part_3
+    400022: Object003_Part_1
+    400024: Object003_Part_2
+    400026: Object003_Part_3
+    400028: Object005_Part_1
+    400030: Object005_Part_2
+    400032: Object005_Part_3
+    400034: Object007_Part_1
+    400036: Object007_Part_2
+    400038: Object007_Part_3
+    400040: Object009_Part_1
+    400042: Object009_Part_2
+    400044: Object009_Part_3
+    400046: Object009_Part_4
+    400048: Object009_Part_5
+    400050: Object009_Part_6
+    400052: //RootNode
+    2300000: Box005_Part_1
+    2300002: Box005_Part_2
+    2300004: Box005_Part_3
+    2300006: Box006_Part_1
+    2300008: Box006_Part_2
+    2300010: Box006_Part_3
+    2300012: Box007
+    2300014: Box008
+    2300016: Box009_Part_1
+    2300018: Box009_Part_2
+    2300020: Box009_Part_3
+    2300022: Object003_Part_1
+    2300024: Object003_Part_2
+    2300026: Object003_Part_3
+    2300028: Object005_Part_1
+    2300030: Object005_Part_2
+    2300032: Object005_Part_3
+    2300034: Object007_Part_1
+    2300036: Object007_Part_2
+    2300038: Object007_Part_3
+    2300040: Object009_Part_1
+    2300042: Object009_Part_2
+    2300044: Object009_Part_3
+    2300046: Object009_Part_4
+    2300048: Object009_Part_5
+    2300050: Object009_Part_6
+    3300000: Box005_Part_1
+    3300002: Box005_Part_2
+    3300004: Box005_Part_3
+    3300006: Box006_Part_1
+    3300008: Box006_Part_2
+    3300010: Box006_Part_3
+    3300012: Box007
+    3300014: Box008
+    3300016: Box009_Part_1
+    3300018: Box009_Part_2
+    3300020: Box009_Part_3
+    3300022: Object003_Part_1
+    3300024: Object003_Part_2
+    3300026: Object003_Part_3
+    3300028: Object005_Part_1
+    3300030: Object005_Part_2
+    3300032: Object005_Part_3
+    3300034: Object007_Part_1
+    3300036: Object007_Part_2
+    3300038: Object007_Part_3
+    3300040: Object009_Part_1
+    3300042: Object009_Part_2
+    3300044: Object009_Part_3
+    3300046: Object009_Part_4
+    3300048: Object009_Part_5
+    3300050: Object009_Part_6
+    4300000: Box007
+    4300002: Box008
+    4300004: Object009_Part_1
+    4300006: Object009_Part_2
+    4300008: Object009_Part_3
+    4300010: Object009_Part_4
+    4300012: Object009_Part_5
+    4300014: Object009_Part_6
+    4300016: Object007_Part_1
+    4300018: Object007_Part_2
+    4300020: Object007_Part_3
+    4300022: Box005_Part_1
+    4300024: Box005_Part_2
+    4300026: Box005_Part_3
+    4300028: Object003_Part_1
+    4300030: Object003_Part_2
+    4300032: Object003_Part_3
+    4300034: Object005_Part_1
+    4300036: Object005_Part_2
+    4300038: Object005_Part_3
+    4300040: Box006_Part_1
+    4300042: Box006_Part_2
+    4300044: Box006_Part_3
+    4300046: Box009_Part_1
+    4300048: Box009_Part_2
+    4300050: Box009_Part_3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

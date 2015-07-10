@@ -30,7 +30,7 @@ public class DungeonMasterCustomEditor : Editor
 
         if (GUILayout.Button("Add New"))
         {
-            dm.AddNew();
+            dm.AddNewRoom();
         }
 
         EditorGUILayout.Space();
@@ -45,10 +45,11 @@ public class DungeonMasterCustomEditor : Editor
             SerializedProperty Probability = MyListRef.FindPropertyRelative("Probability");
             SerializedProperty StartFrom = MyListRef.FindPropertyRelative("StartFrom");
             SerializedProperty SelectedModifier = MyListRef.FindPropertyRelative("SelectedModifier");
-            SerializedProperty HowManyRepeats = MyListRef.FindPropertyRelative("HowManyRepeats");
             SerializedProperty NextRoom = MyListRef.FindPropertyRelative("NextRoom");
+            SerializedProperty MaxRepeats = MyListRef.FindPropertyRelative("MaxRepeats");
+            SerializedProperty Repeats = MyListRef.FindPropertyRelative("Repeats");
             SerializedProperty MaxSpawns = MyListRef.FindPropertyRelative("MaxSpawns");
-            SerializedProperty HowManySpawns = MyListRef.FindPropertyRelative("HowManySpawns");
+            SerializedProperty Spawns = MyListRef.FindPropertyRelative("Spawns");
 
             EditorGUILayout.PropertyField(Name);
             EditorGUILayout.PropertyField(Prefab);
@@ -58,16 +59,16 @@ public class DungeonMasterCustomEditor : Editor
             EditorGUILayout.LabelField("Chance", calculatePercentage(dm.PossibleRooms[i].Probability).ToString() + "%");
 
             dm.PossibleRooms[i].MaxSpawns = EditorGUILayout.Toggle("Max spawns", dm.PossibleRooms[i].MaxSpawns);
-            if (dm.PossibleRooms[i].MaxSpawns) EditorGUILayout.PropertyField(HowManySpawns);
+            if (dm.PossibleRooms[i].MaxSpawns) EditorGUILayout.PropertyField(Spawns);
             dm.PossibleRooms[i].SpecialOptionsIndex = EditorGUILayout.Popup("Special", dm.PossibleRooms[i].SpecialOptionsIndex, specialOptions);
 
-            if (dm.PossibleRooms[i].SpecialOptionsIndex == 1) EditorGUILayout.PropertyField(HowManyRepeats);
+            if (dm.PossibleRooms[i].SpecialOptionsIndex == 1) EditorGUILayout.PropertyField(Repeats);
             if (dm.PossibleRooms[i].SpecialOptionsIndex == 2) EditorGUILayout.PropertyField(NextRoom);
             if (GUILayout.Button("remove " + dm.PossibleRooms[i].Name)) ThisList.DeleteArrayElementAtIndex(i);
 
             //max repeats greater than max spawns
-            if (dm.PossibleRooms[i].HowManyRepeats > dm.PossibleRooms[i].HowMany)
-                dm.PossibleRooms[i].HowManyRepeats = dm.PossibleRooms[i].HowMany;
+            if (dm.PossibleRooms[i].Repeats > dm.PossibleRooms[i].Spawns)
+                dm.PossibleRooms[i].Repeats = dm.PossibleRooms[i].Spawns;
             
         }
         GetTarget.ApplyModifiedProperties();
@@ -75,7 +76,7 @@ public class DungeonMasterCustomEditor : Editor
 
     double calculatePercentage(float probability)
     {
-        double total = dm.totalProbabilityValue();
+        double total = dm.CalculateTotalProbabilityValue();
         double percent = Math.Round((probability / total) * 100, 1);
 
         if(percent < 0 || float.IsNaN((float)percent)) return 0;
