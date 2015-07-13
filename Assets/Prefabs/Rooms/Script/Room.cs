@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
@@ -37,15 +38,28 @@ public class Room
         return this;
     }
 
-    public void triggerSpawners()
+    public void EnterRoom(int doors)
     {
-        GameObject holder = gameObject.transform.FindChild("spanwers").gameObject;
+        TriggerSpawners();
+        PlaceDoors(doors);
+    }
 
-        for (int i = 0; i < holder.transform.childCount; i++)
+    void TriggerSpawners()
+    {
+        GameObject spawnerHolder = gameObject.transform.FindChild("spawners").gameObject;
+
+        for (int i = 0; i < spawnerHolder.transform.childCount; i++)
         {
-            GameObject go = holder.transform.GetChild(i).gameObject;
+            GameObject go = spawnerHolder.transform.GetChild(i).gameObject;
             Spawner spawner = go.GetComponent<Spawner>();
-            spawner.Spawn();
+            spawner.StartSpawning();
         }
+    }
+
+    void PlaceDoors(int doorsNum)
+    {
+        GameObject doorHolder = gameObject.transform.FindChild("props").FindChild("doors").gameObject;
+        Doors door = doorHolder.GetComponent<Doors>();
+        door.PlaceDoors(doorsNum);
     }
 }

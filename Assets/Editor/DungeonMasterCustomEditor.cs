@@ -76,7 +76,7 @@ public class DungeonMasterCustomEditor : Editor
 
     double calculatePercentage(float probability)
     {
-        double total = dm.CalculateTotalProbabilityValue();
+        double total = helpers.CalculateTotalProbabilityValue(dm.PossibleRooms);
         double percent = Math.Round((probability / total) * 100, 1);
 
         if(percent < 0 || float.IsNaN((float)percent)) return 0;

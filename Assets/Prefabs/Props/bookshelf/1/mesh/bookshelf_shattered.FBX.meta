@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 5da6ca407e4f9354bbaed84d5647b33a
+timeCreated: 1436794027
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: bookshelf_001
+    100002: bookshelf_002
+    100004: bookshelf_003
+    100006: bookshelf_004
+    100008: bookshelf_005
+    100010: bookshelf_006
+    100012: bookshelf_007
+    100014: bookshelf_008
+    100016: bookshelf_009
+    100018: bookshelf_010
+    100020: bookshelf_011
+    100022: bookshelf_012
+    100024: bookshelf_013
+    100026: bookshelf_014
+    100028: bookshelf_015
+    100030: bookshelf_016
+    100032: bookshelf_017
+    100034: bookshelf_018
+    100036: bookshelf_019
+    100038: bookshelf_020
+    100040: //RootNode
+    400000: bookshelf_001
+    400002: bookshelf_002
+    400004: bookshelf_003
+    400006: bookshelf_004
+    400008: bookshelf_005
+    400010: bookshelf_006
+    400012: bookshelf_007
+    400014: bookshelf_008
+    400016: bookshelf_009
+    400018: bookshelf_010
+    400020: bookshelf_011
+    400022: bookshelf_012
+    400024: bookshelf_013
+    400026: bookshelf_014
+    400028: bookshelf_015
+    400030: bookshelf_016
+    400032: bookshelf_017
+    400034: bookshelf_018
+    400036: bookshelf_019
+    400038: bookshelf_020
+    400040: //RootNode
+    2300000: bookshelf_001
+    2300002: bookshelf_002
+    2300004: bookshelf_003
+    2300006: bookshelf_004
+    2300008: bookshelf_005
+    2300010: bookshelf_006
+    2300012: bookshelf_007
+    2300014: bookshelf_008
+    2300016: bookshelf_009
+    2300018: bookshelf_010
+    2300020: bookshelf_011
+    2300022: bookshelf_012
+    2300024: bookshelf_013
+    2300026: bookshelf_014
+    2300028: bookshelf_015
+    2300030: bookshelf_016
+    2300032: bookshelf_017
+    2300034: bookshelf_018
+    2300036: bookshelf_019
+    2300038: bookshelf_020
+    3300000: bookshelf_001
+    3300002: bookshelf_002
+    3300004: bookshelf_003
+    3300006: bookshelf_004
+    3300008: bookshelf_005
+    3300010: bookshelf_006
+    3300012: bookshelf_007
+    3300014: bookshelf_008
+    3300016: bookshelf_009
+    3300018: bookshelf_010
+    3300020: bookshelf_011
+    3300022: bookshelf_012
+    3300024: bookshelf_013
+    3300026: bookshelf_014
+    3300028: bookshelf_015
+    3300030: bookshelf_016
+    3300032: bookshelf_017
+    3300034: bookshelf_018
+    3300036: bookshelf_019
+    3300038: bookshelf_020
+    4300000: bookshelf_016
+    4300002: bookshelf_002
+    4300004: bookshelf_010
+    4300006: bookshelf_012
+    4300008: bookshelf_005
+    4300010: bookshelf_004
+    4300012: bookshelf_003
+    4300014: bookshelf_013
+    4300016: bookshelf_015
+    4300018: bookshelf_006
+    4300020: bookshelf_017
+    4300022: bookshelf_019
+    4300024: bookshelf_011
+    4300026: bookshelf_007
+    4300028: bookshelf_008
+    4300030: bookshelf_014
+    4300032: bookshelf_018
+    4300034: bookshelf_009
+    4300036: bookshelf_001
+    4300038: bookshelf_020
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

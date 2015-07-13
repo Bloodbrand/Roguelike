@@ -40,10 +40,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TotalRooms: 100
+  DoorsNum: 2
   PossibleRooms:
   - Name: 1
     Prefab: {fileID: 122904, guid: f5cdd027b9ad00d44832724d1ebd99b3, type: 2}
-    Probability: 10
+    Probability: 1
     StartFrom: 0
     SelectedModifier: 0
     MaxRepeats: 0
@@ -55,7 +56,7 @@ MonoBehaviour:
     SpecialOptionsIndex: 0
   - Name: 2
     Prefab: {fileID: 137854, guid: 7b857b4a4b5a0da42840aa03ecdab8dd, type: 2}
-    Probability: 10
+    Probability: 0
     StartFrom: 0
     SelectedModifier: 0
     MaxRepeats: 0
@@ -67,7 +68,7 @@ MonoBehaviour:
     SpecialOptionsIndex: 0
   - Name: 3
     Prefab: {fileID: 159694, guid: 4298a1b02d02f04449e41c3bdf8b52d3, type: 2}
-    Probability: 10
+    Probability: 0
     StartFrom: 0
     SelectedModifier: 0
     MaxRepeats: 0
@@ -77,6 +78,7 @@ MonoBehaviour:
     Link: 0
     NextRoom: {fileID: 0}
     SpecialOptionsIndex: 0
+  Player1: {fileID: 418746, guid: ba90719b9277ba04ba1a9218e45a688b, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -6,12 +6,21 @@ using System.Collections.Generic;
 public class DungeonMaster : MonoBehaviour
 {
     public int TotalRooms;
+    public int DoorsNum = 1;
+
     [HideInInspector] public List<Room> PossibleRooms = new List<Room>();
     Dungeon dungeon;
+
+    #region player
+    public Transform Player1;
+    Transform selectedPlayer;
+    Vector3 playerPosition;
+    #endregion
 
     void Start()
     {
         GenerateDungeon(TotalRooms);
+        spawnPlayer();
     }
 
     Dungeon GenerateDungeon(int totalRooms)
@@ -19,10 +28,7 @@ public class DungeonMaster : MonoBehaviour
         dungeon = new Dungeon();
 
         for (int roomNum = 0; roomNum < totalRooms; roomNum++)
-        {
             dungeon.AddRoom(pickRandomRoom(roomNum));
-            //Debug.Log(dungeon.Rooms[roomNum].Name);
-        }
 
         dungeon.currentRoom = dungeon.Rooms[0];
         goToRoom(dungeon.currentRoom);
@@ -30,9 +36,17 @@ public class DungeonMaster : MonoBehaviour
         return dungeon;
     }
 
+    void spawnPlayer()
+    {
+        selectedPlayer = Player1;
+        playerPosition = GameObject.Find("PlayerPosition").transform.position;
+        Instantiate(selectedPlayer, playerPosition, Quaternion.identity);
+    }
+
     Room pickRandomRoom(int roomNum)
     {
-        int randomNum = UnityEngine.Random.Range(0, (int)CalculateTotalProbabilityValue());
+        //increment because random is uninclusive of last number
+        int randomNum = UnityEngine.Random.Range(0, helpers.CalculateTotalProbabilityValue(PossibleRooms)); 
         float currentProbability = 0; 
 
         for (int i = 0; i < PossibleRooms.Count; i++)
@@ -45,17 +59,17 @@ public class DungeonMaster : MonoBehaviour
     }
 
     //TODO: make this work for all lists
-    public double CalculateTotalProbabilityValue()
-    {
-        double total = 0;
-        for (int i = 0; i < PossibleRooms.Count; i++)
-        {
-            double prob = PossibleRooms[i].Probability;
-            if (prob < 0) prob = 0;
-            total += prob;
-        }
-        return total;
-    }
+    //public double CalculateTotalProbabilityValue()
+    //{
+    //    double total = 0;
+    //    for (int i = 0; i < PossibleRooms.Count; i++)
+    //    {
+    //        double prob = PossibleRooms[i].Probability;
+    //        if (prob < 0) prob = 0;
+    //        total += prob;
+    //    }
+    //    return total;
+    //}
 
     bool checkRoomSkip(int roomNumber, Room room)
     {
@@ -74,7 +88,7 @@ public class DungeonMaster : MonoBehaviour
     {
         destroyRoom(dungeon.currentRoom);
         instantiateRoom(room);
-        room.triggerSpawners();
+        room.EnterRoom(DoorsNum);
         dungeon.currentRoom = room;
     }
 
