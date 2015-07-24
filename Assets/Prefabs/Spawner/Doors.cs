@@ -7,11 +7,14 @@ public class Doors : MonoBehaviour {
 
     public void PlaceDoors(int doorsNum)
     {
+        if (transform.childCount == 0) return;
         List<int> chosenNumbers = new List<int>();
         int randomDoor, randomPos;
+        if (doorsNum > transform.childCount) doorsNum = transform.childCount;
 
         for (int i = 0; i < doorsNum; i++)
         {
+            
             do randomPos = UnityEngine.Random.Range(0, transform.childCount);
             while (chosenNumbers.Contains(randomPos));
             chosenNumbers.Add(randomPos);

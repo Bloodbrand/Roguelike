@@ -1,0 +1,101 @@
+fileFormatVersion: 2
+guid: 09de0af2cb77c6049ab789781ce237f9
+timeCreated: 1437128251
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Door
+    100002: Floor
+    100004: //RootNode
+    100006: Stalp_01
+    100008: Stalp_Gear
+    100010: Wall_Light
+    100012: Walls
+    400000: Door
+    400002: Floor
+    400004: //RootNode
+    400006: Stalp_01
+    400008: Stalp_Gear
+    400010: Wall_Light
+    400012: Walls
+    2300000: Door
+    2300002: Floor
+    2300004: Stalp_01
+    2300006: Stalp_Gear
+    2300008: Wall_Light
+    2300010: Walls
+    3300000: Door
+    3300002: Floor
+    3300004: Stalp_01
+    3300006: Stalp_Gear
+    3300008: Wall_Light
+    3300010: Walls
+    4300000: Floor
+    4300002: Stalp_01
+    4300004: Door
+    4300006: Wall_Light
+    4300008: Stalp_Gear
+    4300010: Walls
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

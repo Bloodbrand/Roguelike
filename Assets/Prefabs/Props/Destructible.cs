@@ -7,7 +7,7 @@ public class Destructible : MonoBehaviour {
         explode();
     }
 
-    void explode()
+    public void explode()
     {
         foreach (Transform child in transform)
         {

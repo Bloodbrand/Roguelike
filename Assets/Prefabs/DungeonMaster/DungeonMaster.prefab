@@ -42,7 +42,7 @@ MonoBehaviour:
   TotalRooms: 100
   DoorsNum: 2
   PossibleRooms:
-  - Name: 1
+  - Name: 
     Prefab: {fileID: 122904, guid: f5cdd027b9ad00d44832724d1ebd99b3, type: 2}
     Probability: 1
     StartFrom: 0
@@ -54,21 +54,9 @@ MonoBehaviour:
     Link: 0
     NextRoom: {fileID: 0}
     SpecialOptionsIndex: 0
-  - Name: 2
-    Prefab: {fileID: 137854, guid: 7b857b4a4b5a0da42840aa03ecdab8dd, type: 2}
-    Probability: 0
-    StartFrom: 0
-    SelectedModifier: 0
-    MaxRepeats: 0
-    Repeats: 0
-    MaxSpawns: 0
-    Spawns: 0
-    Link: 0
-    NextRoom: {fileID: 0}
-    SpecialOptionsIndex: 0
-  - Name: 3
-    Prefab: {fileID: 159694, guid: 4298a1b02d02f04449e41c3bdf8b52d3, type: 2}
-    Probability: 0
+  - Name: 
+    Prefab: {fileID: 117518, guid: 077f527cb0c2d694ab743f2050778096, type: 2}
+    Probability: 1
     StartFrom: 0
     SelectedModifier: 0
     MaxRepeats: 0

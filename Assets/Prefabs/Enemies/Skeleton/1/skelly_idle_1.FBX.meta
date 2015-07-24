@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: 2275841c48d152c478d99fbab2bd4f40
+timeCreated: 1437140121
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Base Human
+    100002: Base HumanLCalf
+    100004: Base HumanLDigit11
+    100006: Base HumanLDigit21
+    100008: Base HumanLDigit31
+    100010: Base HumanLDigit41
+    100012: Base HumanLFoot
+    100014: Base HumanLForearm
+    100016: Base HumanLPalm
+    100018: Base HumanLThigh
+    100020: Base HumanLUpperarm
+    100022: Base HumanRCalf
+    100024: Base HumanRDigit11
+    100026: Base HumanRDigit21
+    100028: Base HumanRDigit31
+    100030: Base HumanRDigit41
+    100032: Base HumanRFoot
+    100034: Base HumanRForearm
+    100036: Base HumanRPalm
+    100038: Base HumanRThigh
+    100040: Base HumanRUpperarm
+    100042: Base HumanSpine1
+    100044: Base HumanSpine2
+    100046: Base HumanSpine3
+    100048: Box007
+    100050: Cylinder013
+    100052: Cylinder014
+    100054: Cylinder015
+    100056: Cylinder016
+    100058: Cylinder017
+    100060: Cylinder018
+    100062: Cylinder019
+    100064: Cylinder020
+    100066: Cylinder021
+    100068: IKTarget001
+    100070: IKTarget002
+    100072: Object001
+    100074: Object002
+    100076: Object007
+    100078: Object009
+    100080: Object011
+    100082: Object012
+    100084: Object013
+    100086: Plane032
+    100088: Plane034
+    100090: Plane035
+    100092: Plane036
+    100094: Plane037
+    100096: Plane038
+    100098: //RootNode
+    100100: skull001
+    400000: Base Human
+    400002: Base HumanLCalf
+    400004: Base HumanLDigit11
+    400006: Base HumanLDigit21
+    400008: Base HumanLDigit31
+    400010: Base HumanLDigit41
+    400012: Base HumanLFoot
+    400014: Base HumanLForearm
+    400016: Base HumanLPalm
+    400018: Base HumanLThigh
+    400020: Base HumanLUpperarm
+    400022: Base HumanRCalf
+    400024: Base HumanRDigit11
+    400026: Base HumanRDigit21
+    400028: Base HumanRDigit31
+    400030: Base HumanRDigit41
+    400032: Base HumanRFoot
+    400034: Base HumanRForearm
+    400036: Base HumanRPalm
+    400038: Base HumanRThigh
+    400040: Base HumanRUpperarm
+    400042: Base HumanSpine1
+    400044: Base HumanSpine2
+    400046: Base HumanSpine3
+    400048: Box007
+    400050: Cylinder013
+    400052: Cylinder014
+    400054: Cylinder015
+    400056: Cylinder016
+    400058: Cylinder017
+    400060: Cylinder018
+    400062: Cylinder019
+    400064: Cylinder020
+    400066: Cylinder021
+    400068: IKTarget001
+    400070: IKTarget002
+    400072: Object001
+    400074: Object002
+    400076: Object007
+    400078: Object009
+    400080: Object011
+    400082: Object012
+    400084: Object013
+    400086: Plane032
+    400088: Plane034
+    400090: Plane035
+    400092: Plane036
+    400094: Plane037
+    400096: Plane038
+    400098: //RootNode
+    400100: skull001
+    2300000: Box007
+    2300002: Cylinder013
+    2300004: Cylinder014
+    2300006: Cylinder015
+    2300008: Cylinder016
+    2300010: Cylinder017
+    2300012: Cylinder018
+    2300014: Cylinder020
+    2300016: Cylinder021
+    2300018: Plane032
+    2300020: Plane035
+    2300022: Plane036
+    2300024: Plane037
+    2300026: skull001
+    3300000: Box007
+    3300002: Cylinder013
+    3300004: Cylinder014
+    3300006: Cylinder015
+    3300008: Cylinder016
+    3300010: Cylinder017
+    3300012: Cylinder018
+    3300014: Cylinder020
+    3300016: Cylinder021
+    3300018: Plane032
+    3300020: Plane035
+    3300022: Plane036
+    3300024: Plane037
+    3300026: skull001
+    4300000: Plane037
+    4300002: Cylinder021
+    4300004: Cylinder013
+    4300006: Plane036
+    4300008: Cylinder020
+    4300010: Cylinder018
+    4300012: Cylinder017
+    4300014: Cylinder016
+    4300016: Cylinder014
+    4300018: Cylinder015
+    4300020: skull001
+    4300022: Plane035
+    4300024: Box007
+    4300026: Plane032
+    4300028: Plane038
+    4300030: Plane034
+    4300032: Cylinder019
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Cylinder019
+    13700002: Plane034
+    13700004: Plane038
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Base Human
+        weight: 1
+      - path: Cylinder019
+        weight: 1
+      - path: IKTarget001
+        weight: 1
+      - path: IKTarget002
+        weight: 1
+      - path: Object001
+        weight: 1
+      - path: Object001/Base HumanLThigh
+        weight: 1
+      - path: Object001/Base HumanLThigh/Base HumanLCalf
+        weight: 1
+      - path: Object001/Base HumanLThigh/Base HumanLCalf/Base HumanLFoot
+        weight: 1
+      - path: Object001/Base HumanLThigh/Base HumanLCalf/Base HumanLFoot/Plane037
+        weight: 1
+      - path: Object001/Base HumanLThigh/Base HumanLCalf/Cylinder021
+        weight: 1
+      - path: Object001/Base HumanLThigh/Cylinder013
+        weight: 1
+      - path: Object001/Base HumanRThigh
+        weight: 1
+      - path: Object001/Base HumanRThigh/Base HumanRCalf
+        weight: 1
+      - path: Object001/Base HumanRThigh/Base HumanRCalf/Base HumanRFoot
+        weight: 1
+      - path: Object001/Base HumanRThigh/Base HumanRCalf/Base HumanRFoot/Plane036
+        weight: 1
+      - path: Object001/Base HumanRThigh/Base HumanRCalf/Cylinder020
+        weight: 1
+      - path: Object001/Base HumanRThigh/Cylinder018
+        weight: 1
+      - path: Object001/Base HumanSpine1
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Box007
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007/Base
+          HumanLUpperarm
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007/Base
+          HumanLUpperarm/Base HumanLForearm
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007/Base
+          HumanLUpperarm/Base HumanLForearm/Base HumanLPalm
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007/Base
+          HumanLUpperarm/Base HumanLForearm/Base HumanLPalm/Base HumanLDigit11
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007/Base
+          HumanLUpperarm/Base HumanLForearm/Base HumanLPalm/Base HumanLDigit21
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007/Base
+          HumanLUpperarm/Base HumanLForearm/Base HumanLPalm/Base HumanLDigit31
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007/Base
+          HumanLUpperarm/Base HumanLForearm/Base HumanLPalm/Base HumanLDigit41
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007/Base
+          HumanLUpperarm/Base HumanLForearm/Cylinder017
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object007/Base
+          HumanLUpperarm/Cylinder016
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009/Base
+          HumanRUpperarm
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009/Base
+          HumanRUpperarm/Base HumanRForearm
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009/Base
+          HumanRUpperarm/Base HumanRForearm/Base HumanRPalm
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009/Base
+          HumanRUpperarm/Base HumanRForearm/Base HumanRPalm/Base HumanRDigit11
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009/Base
+          HumanRUpperarm/Base HumanRForearm/Base HumanRPalm/Base HumanRDigit21
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009/Base
+          HumanRUpperarm/Base HumanRForearm/Base HumanRPalm/Base HumanRDigit31
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009/Base
+          HumanRUpperarm/Base HumanRForearm/Base HumanRPalm/Base HumanRDigit41
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009/Base
+          HumanRUpperarm/Base HumanRForearm/Cylinder014
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object009/Base
+          HumanRUpperarm/Cylinder015
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object012
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object012/Object013
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object012/Object013/Object011
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object012/Object013/Object011/skull001
+        weight: 1
+      - path: Object001/Base HumanSpine1/Base HumanSpine2/Base HumanSpine3/Object002/Object012/Object013/Object011/skull001/Plane035
+        weight: 1
+      - path: Object001/Plane032
+        weight: 1
+      - path: Plane034
+        weight: 1
+      - path: Plane038
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

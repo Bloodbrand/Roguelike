@@ -46,8 +46,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468538}
-  - 114: {fileID: 11458222}
   - 65: {fileID: 6557774}
+  - 114: {fileID: 11458222}
   m_Layer: 0
   m_Name: table_shattered
   m_TagString: Untagged
@@ -698,7 +698,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.65994573, y: 1.34423995, z: -8.04999638}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 426978}
@@ -2271,7 +2271,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: .709999979, z: 1.96000004}
+  m_Size: {x: 1.05999994, y: .769999981, z: 2.05999994}
   m_Center: {x: 0, y: .270000011, z: 0}
 --- !u!65 &6563822
 BoxCollider:

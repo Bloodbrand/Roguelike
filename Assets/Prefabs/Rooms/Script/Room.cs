@@ -9,7 +9,7 @@ public class Room
     public GameObject Prefab;
     public float Probability;
     public int StartFrom;
-    public float SelectedModifier;
+    public int SelectedModifier;
     public bool MaxRepeats;
     public int Repeats;
     public bool MaxSpawns;

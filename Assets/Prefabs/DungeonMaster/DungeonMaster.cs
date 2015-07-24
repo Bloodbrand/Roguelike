@@ -46,7 +46,7 @@ public class DungeonMaster : MonoBehaviour
     Room pickRandomRoom(int roomNum)
     {
         //increment because random is uninclusive of last number
-        int randomNum = UnityEngine.Random.Range(0, helpers.CalculateTotalProbabilityValue(PossibleRooms)); 
+        float randomNum = UnityEngine.Random.Range(0, helpers.CalculateTotalProbabilityValue(PossibleRooms)); 
         float currentProbability = 0; 
 
         for (int i = 0; i < PossibleRooms.Count; i++)
@@ -57,19 +57,6 @@ public class DungeonMaster : MonoBehaviour
         }
         return null;                
     }
-
-    //TODO: make this work for all lists
-    //public double CalculateTotalProbabilityValue()
-    //{
-    //    double total = 0;
-    //    for (int i = 0; i < PossibleRooms.Count; i++)
-    //    {
-    //        double prob = PossibleRooms[i].Probability;
-    //        if (prob < 0) prob = 0;
-    //        total += prob;
-    //    }
-    //    return total;
-    //}
 
     bool checkRoomSkip(int roomNumber, Room room)
     {
